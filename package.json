@@ -1,0 +1,52 @@
+{
+  "name": "audio",
+  "version": "1.0.0",
+  "description": "Editor.js Tool for uploading audio files.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --watch --mode=development",
+    "server:dev": "nodemon dev/server.js",
+    "lint": "eslint src/ --ext .js",
+    "lint:errors": "eslint src/ --ext .js --quiet",
+    "lint:fix": "eslint src/ --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/editor-js/audio.git"
+  },
+  "keywords": [
+    "editorjs",
+    "audio"
+  ],
+  "author": "ranemihir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/editor-js/audio/issues"
+  },
+  "homepage": "https://github.com/editor-js/audio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/runtime": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.6.0",
+    "eslint-config-codex": "^1.3.6",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "nodemon": "^2.0.4",
+    "style-loader": "^1.2.1",
+    "svg-inline-loader": "^0.8.2",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
